@@ -14,7 +14,7 @@ export default function FileUpload({ onFileUpload }) {
 
     try {
       // Send file to FastAPI backend
-      const res = await axios.post("http://localhost:8000/upload/", formData, {
+      const res = await axios.post("https://smart-compliance-scheduler.onrender.com/upload/", formData, {
         headers: { "Content-Type": "multipart/form-data" }
       });
       // Call parent with the returned file path
