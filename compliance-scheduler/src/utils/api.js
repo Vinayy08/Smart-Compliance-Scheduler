@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '"https://smart-compliance-scheduler.onrender.com";'; // Update if deployed
+const API_URL = 'https://smart-compliance-scheduler.onrender.com'; // Update if deployed
 
 // Create axios instance with default config
 const api = axios.create({
