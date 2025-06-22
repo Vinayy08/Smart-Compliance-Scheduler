@@ -1,0 +1,194 @@
+.calendar-view {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.calendar-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.calendar-icon {
+  color: #3b82f6;
+  flex-shrink: 0;
+}
+
+.calendar-view h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1f2937;
+  letter-spacing: -0.025em;
+}
+
+
+
+/* FullCalendar custom styling */
+.fc {
+  --fc-border-color: #e5e7eb;
+  --fc-button-text-color: #374151;
+  --fc-button-bg-color: #f9fafb;
+  --fc-button-border-color: #d1d5db;
+  --fc-button-hover-bg-color: #f3f4f6;
+  --fc-button-hover-border-color: #9ca3af;
+  --fc-button-active-bg-color: #3b82f6;
+  --fc-button-active-border-color: #3b82f6;
+  --fc-today-bg-color: rgba(59, 130, 246, 0.05);
+}
+
+.fc-header-toolbar {
+  margin-bottom: 20px !important;
+}
+
+.fc-toolbar-title {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+}
+
+.fc-button {
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  padding: 8px 16px !important;
+  transition: all 0.2s ease !important;
+  margin: 0 3px !important;
+}
+
+.fc-button:hover {
+  transform: translateY(-1px);
+}
+
+.fc-button-primary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+  border-color: #3b82f6 !important;
+}
+
+.fc-button-primary:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+  border-color: #2563eb !important;
+}
+
+.fc-daygrid-day-number {
+  color: #374151;
+  font-weight: 500;
+}
+
+.fc-col-header-cell {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.fc-col-header-cell-cushion {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Event styling */
+.fc-event {
+  border-radius: 6px !important;
+  border: none !important;
+  padding: 4px 8px !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.fc-event:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.fc-event-complete {
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  color: #ffffff !important;
+}
+
+.fc-event-overdue {
+  background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+  color: #ffffff !important;
+}
+
+.fc-event-title {
+  font-weight: 500 !important;
+}
+
+/* Today highlight */
+.fc-day-today {
+  background: rgba(59, 130, 246, 0.08) !important;
+}
+
+.fc-day-today .fc-daygrid-day-number {
+  background: #3b82f6;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+}
+
+/* Week/Day view styling */
+.fc-timegrid-slot {
+  border-color: #f1f5f9;
+}
+
+.fc-timegrid-axis {
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Hover effects for calendar cells */
+.fc-daygrid-day:hover {
+  background: rgba(59, 130, 246, 0.03);
+  cursor: pointer;
+}
+
+/* Legacy list styles (if needed) */
+.calendar-view ul {
+  list-style: none;
+  padding: 0;
+}
+
+.calendar-view li {
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-view button {
+  margin-left: 10px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.calendar-view button:hover {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  transform: translateY(-1px);
+}

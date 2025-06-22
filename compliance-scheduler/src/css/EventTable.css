@@ -1,0 +1,253 @@
+.event-table {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  overflow-y: scroll;
+  border: 1px solid #e5e7eb;
+}
+
+.event-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.event-table th,
+.event-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+}
+
+.event-table th {
+  background: #f1f5f9;
+  color: #374151;
+  font-weight: 600;
+  font-size: 13px;
+  border-bottom: 2px solid #d1d5db;
+}
+
+.event-table th:last-child,
+.event-table td:last-child {
+  width: 180px;
+  padding: 12px 8px;
+}
+
+.event-table th svg {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.event-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Row styling based on status */
+.row-overdue {
+  background: #fef2f2;
+  border-left: 3px solid #ef4444;
+}
+
+.row-complete {
+  background: #f0fdf4;
+  border-left: 3px solid #22c55e;
+}
+
+.row-progress {
+  background: #eff6ff;
+  border-left: 3px solid #3b82f6;
+}
+
+.row-default {
+  background: #ffffff;
+  border-left: 3px solid transparent;
+}
+
+.row-overdue:hover {
+  background: #fee2e2;
+}
+
+.row-complete:hover {
+  background: #dcfce7;
+}
+
+.row-progress:hover {
+  background: #dbeafe;
+}
+
+.row-default:hover {
+  background: #f9fafb;
+}
+
+/* Status column styling */
+.status {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-overdue {
+  color: #dc2626;
+}
+
+.status-complete {
+  color: #16a34a;
+}
+
+.status-progress {
+  color: #2563eb;
+}
+
+.status-default {
+  color: #6b7280;
+}
+
+/* Days left column styling */
+.days-left {
+  font-weight: 500;
+}
+
+.completed-text {
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.days-remaining {
+  color: #059669;
+}
+
+.due-today {
+  color: #d97706;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.overdue-text {
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+
+/* File link styling */
+.file-link {
+  color: #2563eb;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.file-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* No events styling */
+.no-events {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Actions column */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Button base styles */
+.event-table button {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+/* Edit button */
+.btn-edit {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+.btn-edit:hover {
+  background: #4f46e5;
+}
+
+/* Delete button */
+.btn-delete {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+/* Complete button */
+.btn-complete {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.btn-complete:hover:not(.disabled) {
+  background: #059669;
+}
+
+.btn-complete.disabled {
+  background: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .event-table {
+    padding: 16px;
+  }
+  
+  .event-table th,
+  .event-table td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+  
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+  
+  .event-table button {
+    justify-content: center;
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
