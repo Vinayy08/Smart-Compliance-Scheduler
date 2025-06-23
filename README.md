@@ -3,6 +3,7 @@
 A modern web application that helps compliance professionals track, manage, and never miss a critical compliance deadline.  
 Designed for clarity, speed, and ease of use — especially for professionals aged 50+.
 
+
 ![image](https://github.com/user-attachments/assets/138ebd70-ed10-4e91-9dc0-f42627e6b03a)
 
 
@@ -46,10 +47,10 @@ Designed for clarity, speed, and ease of use — especially for professionals ag
 
 ## 📸 Demo / Screenshots
 
-![screenshot-table](./screenshot-table.png)
+### Table Screenshot
 ![image](https://github.com/user-attachments/assets/b9238131-1dbf-4183-bf63-409270412822)
 
-![screenshot-calendar](./screenshot-calendar.png)
+### Calender Screenshot
 ![image](https://github.com/user-attachments/assets/ad032a56-4757-4914-adc4-f0c9b07d9d26)
 
 
