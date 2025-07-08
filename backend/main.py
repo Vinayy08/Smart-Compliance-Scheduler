@@ -13,7 +13,8 @@ app = FastAPI()
 # IMPROVED CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "https://smart-compliance-scheduler-1.onrender.com"],  # Specific origins
+    # Add the production URL here if needed
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],  # Specific origins
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
