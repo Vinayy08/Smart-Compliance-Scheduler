@@ -115,7 +115,7 @@ Smart-Compliance-Scheduler/
 │   ├── database.py
 │   ├── requirements.txt
 │   └── ...
-├── frontend/
+├── compliance-scheduler/
 │   ├── src/
 │   ├── public/
 │   ├── package.json
